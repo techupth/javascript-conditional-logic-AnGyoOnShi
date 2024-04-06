@@ -2,6 +2,13 @@ let favoriteBooks = [];
 
 function addFavoriteBook(bookName) {
   // Start coding here !
+  let checkBeauty = bookName.includes("Beauty");
+  switch (checkBeauty) {
+    case false:
+      break;
+    case true:
+      favoriteBooks.push(bookName);
+  }
 }
 
 // Example case
